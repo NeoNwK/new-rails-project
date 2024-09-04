@@ -96,6 +96,7 @@ input[type="submit"]:hover {
     align-items: center;
     margin-top: 10px;
 }
+
   
   table {
     width: 100%;
@@ -129,9 +130,14 @@ input[type="submit"]:hover {
     text-align: center;
   }
   
+  .new-registration:hover {
+    background-color: #5a68d5; 
+    color: white;
+  }
   .button-allList {
     display: flex;
-  justify-content: flex-end;
+    justify-content: flex-end;
+    margin-bottom: auto;
   }
 
   

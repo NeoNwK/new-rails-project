@@ -59,8 +59,8 @@
       </div>
     </div>
     <div class="column">
-      <h2 class>Subject</h2>
-      <%= form.select :subject, options_for_select([['เลือกตัวเลือก', ''], ['ตัวเลือกที่ 1', 'option1'], ['ตัวเลือกที่ 2', 'option2'], ['ตัวเลือกที่ 3', 'option3']]), {}, { required: true } %>
+      <h2 class>Country</h2>
+      <%= form.select :subject, options_for_select([['USA', 'USA'], ['Japan', 'Japan'], ['Arakis', 'Arakis']]), {}, { required: true } %>
     </div>
     <div class="bottom">
     <%= form.submit 'Submit', class: 'button' %>
