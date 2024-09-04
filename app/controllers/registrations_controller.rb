@@ -7,8 +7,10 @@ class RegistrationsController < ApplicationController
     @registrations = Registration.all
   end
 
-  def show
+  def destroy
     @registration = Registration.find(params[:id])
+    @registration.destroy
+    redirect_to registrations_path, notice: 'ลบข้อมูลสำเร็จ'
   end
 
   def create
