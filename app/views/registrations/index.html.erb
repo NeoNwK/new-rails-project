@@ -1,27 +1,27 @@
 <div class="form-container">
-  <h1>All list of registration</h1>
+  <h1>All User</h1>
 
   <table>
-      <div>
+      <head>
         <th>FirstName</th>
         <th>LastName</th>
         <th>Email</th>
         <th>Phone</th>
         <th>Country</th>
         <th>delete</th>
-      </div>
+      </head>
 
     <tbody>
       <% @registrations.each do |registration| %>
-        <tr>
+        <div>
           <td><%= registration.first_name %></td>
           <td><%= registration.last_name %></td>
           <td><%= registration.email %></td>
           <td><%= registration.phone %></td>
           <td><%= registration.subject %></td>
-          <td class="delete">
+          <td>
              <%= button_to 'ลบ', registration_path(registration), method: :delete %>
-          </td>
+          </div>
         </tr>
       <% end %>
     </tbody>

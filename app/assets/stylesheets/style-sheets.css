@@ -20,6 +20,14 @@ body {
     max-width: 700px;  
     
 }
+.gotoalluserpage {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.gotoalluserpage:hover {
+    text-decoration: underline;
+}
 
 .title {
     margin-bottom: 1.5rem;
@@ -105,7 +113,7 @@ input[type="submit"]:hover {
   
   th, td {
     padding: 10px;
-    text-align: left;
+    text-align: center;
     border: 1px solid #ccc;
   }
   
@@ -123,7 +131,6 @@ input[type="submit"]:hover {
     font-size: 14px;
     font-weight: bold;
     border-radius: 10px;
-    transition: all 0.3s ease;
     width: 100%;
     max-width: 120px;  
     margin-top: 20px;
@@ -144,4 +151,4 @@ input[type="submit"]:hover {
     justify-content: center;
  }
 
- 
+
