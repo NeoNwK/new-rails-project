@@ -1,16 +1,15 @@
 <div class="form-container">
-  <h1>รายการลงทะเบียนทั้งหมด</h1>
+  <h1>All list of registration</h1>
 
   <table>
-    <thead>
-      <tr>
-        <th>ชื่อ</th>
-        <th>นามสกุล</th>
-        <th>อีเมล</th>
-        <th>เบอร์โทรศัพท์</th>
-        <th>วิชา</th>
-      </tr>
-    </thead>
+      <div>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Subject</th>
+      </div>
+
     <tbody>
       <% @registrations.each do |registration| %>
         <tr>
@@ -23,6 +22,7 @@
       <% end %>
     </tbody>
   </table>
-
-  <%= link_to 'ลงทะเบียนใหม่', new_registration_path, class: 'new-registration' %>
+  <div class="button-allList">
+     <%= link_to 'กลับหน้าลงทะเบียน', new_registration_path, class: 'new-registration' %>
+  </div>
 </div>
