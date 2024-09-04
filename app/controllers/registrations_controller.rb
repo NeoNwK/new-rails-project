@@ -3,6 +3,14 @@ class RegistrationsController < ApplicationController
     @registration = Registration.new
   end
 
+  def index
+    @registrations = Registration.all
+  end
+
+  def show
+    @registration = Registration.find(params[:id])
+  end
+
   def create
     @registration = Registration.new(registration_params)
     if @registration.save

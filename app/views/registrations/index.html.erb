@@ -1,0 +1,28 @@
+<div class="form-container">
+  <h1>รายการลงทะเบียนทั้งหมด</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ชื่อ</th>
+        <th>นามสกุล</th>
+        <th>อีเมล</th>
+        <th>เบอร์โทรศัพท์</th>
+        <th>วิชา</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @registrations.each do |registration| %>
+        <tr>
+          <td><%= registration.first_name %></td>
+          <td><%= registration.last_name %></td>
+          <td><%= registration.email %></td>
+          <td><%= registration.phone %></td>
+          <td><%= registration.subject %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <%= link_to 'ลงทะเบียนใหม่', new_registration_path, class: 'new-registration' %>
+</div>
