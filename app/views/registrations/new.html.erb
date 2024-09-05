@@ -60,11 +60,11 @@
     </div>
     <div class="column">
       <h2 class>Country</h2>
-      <%= form.select :subject, options_for_select([['USA', 'USA'], ['Japan', 'Japan'], ['Arakis', 'Arakis']]), {}, { required: true } %>
+      <%= form.select :subject, options_for_select([['USA', 'USA'], ['Japan', 'Japan'], ['Arakis', 'Arakis'], ['Tatooin', 'tatooin'],['Nova X-115', 'Nova X-115']]), {}, { required: true } %>
     </div>
     <div class="bottom">
-    <%= form.submit 'Submit', class: 'button' %>
-  <%= link_to raw('all user &#8594'), registrations_path, class: 'gotoalluserpage' %>
+    <%= form.submit 'Submit', class: 'button-submit' %>
+  <%= link_to raw('Manage Accounte'), registrations_path, class: 'gotoalluserpage' %>
     </div>
   </div>
 <% end %>
