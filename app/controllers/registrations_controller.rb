@@ -19,6 +19,15 @@ class RegistrationsController < ApplicationController
     redirect_to registrations_path, notice: 'ลบข้อมูลสำเร็จ'
   end
 
+  def update
+    @registration = Registration.find(params[:id])
+    if @registration.update(registration_params)
+      redirect_to registrations_path, notice: 'ข้อมูลถูกอัพเดตเรียบร้อยแล้ว'
+    else
+      render :edit
+    end
+  end
+
   def create
     @registration = Registration.new(registration_params)
     if @registration.save

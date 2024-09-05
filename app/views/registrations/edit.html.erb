@@ -1,4 +1,5 @@
-<div class="container">
+<div class="edit-container">
+ <%= link_to 'กลับ', registrations_path, class: 'backtoalluserpage' %>
   <h1>แก้ไขข้อมูลลงทะเบียน</h1>
 
   <%= form_with(model: @registration, local: true) do |form| %>
@@ -22,13 +23,12 @@
       <%= form.label :last_name, "นามสกุล" %>
       <%= form.text_field :last_name %>
     </div>
-
-    <!-- เพิ่มฟิลด์อื่นๆ ตามต้องการ -->
-
+<div class="button-edit">
     <div class="actions">
       <%= form.submit 'อัพเดทข้อมูล' %>
     </div>
   <% end %>
 
-  <%= link_to 'กลับ', registrations_path %>
+ 
+  </div>
 </div>
