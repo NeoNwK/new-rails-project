@@ -11,7 +11,7 @@
   <% end %>
 
   <div class="form-container">
-<%= link_to raw('&#8592; back'), root_path, class: 'gotoalluserpage' %>
+<%= link_to raw('&#8592; back'), root_path, class: 'gotomainpage' %>
     <h1 class="title">Register Form</h1>
     <div class="name">
       <div class="column">
@@ -64,7 +64,7 @@
     </div>
     <div class="bottom">
     <%= form.submit 'Submit', class: 'button' %>
-  <%= link_to raw('&#8592; all user'), registrations_path, class: 'gotoalluserpage' %>
+  <%= link_to raw('all user &#8594'), registrations_path, class: 'gotoalluserpage' %>
     </div>
   </div>
 <% end %>

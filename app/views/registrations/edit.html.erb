@@ -1,0 +1,34 @@
+<div class="container">
+  <h1>แก้ไขข้อมูลลงทะเบียน</h1>
+
+  <%= form_with(model: @registration, local: true) do |form| %>
+    <% if @registration.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+        <ul>
+          <% @registration.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :first_name, "ชื่อ" %>
+      <%= form.text_field :first_name %>
+    </div>
+
+    <div class="field">
+      <%= form.label :last_name, "นามสกุล" %>
+      <%= form.text_field :last_name %>
+    </div>
+
+    <!-- เพิ่มฟิลด์อื่นๆ ตามต้องการ -->
+
+    <div class="actions">
+      <%= form.submit 'อัพเดทข้อมูล' %>
+    </div>
+  <% end %>
+
+  <%= link_to 'กลับ', registrations_path %>
+</div>
