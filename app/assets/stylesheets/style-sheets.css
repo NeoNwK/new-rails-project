@@ -212,6 +212,7 @@ select {
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    
   }
   .field {
     display: flex;
@@ -228,4 +229,18 @@ select {
   .backtoalluserpage:hover {
     text-decoration: underline;
     color: #f50606;
+  }
+
+  .button-update {
+    display: inline-block;
+    background-color: #6c7ae0; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 200px;  
+    margin-top: 10px;
+    cursor: pointer;
   }

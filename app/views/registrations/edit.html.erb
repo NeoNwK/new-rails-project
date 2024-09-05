@@ -1,6 +1,6 @@
 <div class="edit-container">
  <%= link_to 'กลับ', registrations_path, class: 'backtoalluserpage' %>
-  <h1>แก้ไขข้อมูลลงทะเบียน</h1>
+  <h1>Edit registration information</h1>
 
   <%= form_with(model: @registration, local: true) do |form| %>
     <% if @registration.errors.any? %>
@@ -15,17 +15,17 @@
     <% end %>
 
     <div class="field">
-      <%= form.label :first_name, "ชื่อ" %>
+      <%= form.label :first_name, "First name" %>
       <%= form.text_field :first_name %>
     </div>
 
     <div class="field">
-      <%= form.label :last_name, "นามสกุล" %>
+      <%= form.label :last_name, "Last name" %>
       <%= form.text_field :last_name %>
     </div>
 <div class="button-edit">
     <div class="actions">
-      <%= form.submit 'อัพเดทข้อมูล' %>
+      <%= form.submit 'update information', class: 'button-update' %>
     </div>
   <% end %>
 
