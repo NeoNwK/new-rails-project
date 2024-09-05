@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient( #9B4376, #DBA5BA);
+    background: linear-gradient( 45deg,#9B4376,#966EC8,#56659A, #DBA5BA);
     padding-right: 10rem;
 }
 
@@ -27,6 +27,7 @@ body {
 
 .gotoalluserpage:hover {
     text-decoration: underline;
+    color: red;
 }
 
 .title {
@@ -150,5 +151,7 @@ input[type="submit"]:hover {
  .delete {
     justify-content: center;
  }
+
+ 
 
 

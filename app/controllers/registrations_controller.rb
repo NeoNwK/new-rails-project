@@ -7,6 +7,9 @@ class RegistrationsController < ApplicationController
     @registrations = Registration.all
   end
 
+  def main
+  end
+
   def destroy
     @registration = Registration.find(params[:id])
     @registration.destroy
