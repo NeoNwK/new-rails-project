@@ -1,4 +1,4 @@
-<%= form_with(model: @registration, local: true, url: registrations_create_path, class: "form") do |form| %>
+<%= form_with(model: @registration, local: true, url: registrations_create_path, class: "main-form") do |form| %>
   <% if @registration.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@registration.errors.count, "error") %> ทำให้ไม่สามารถบันทึกข้อมูลได้:</h2>
@@ -10,7 +10,7 @@
     </div>
   <% end %>
 
-  <div class="form-container">
+  
 <%= link_to raw('&#8592; Back'), root_path, class: 'gotomainpage' %>
     <h1 class="title">Register Form</h1>
     <div class="name">
@@ -66,5 +66,4 @@
     <%= form.submit 'Submit', class: 'button-submit' %>
   <%= link_to raw('Manage Accounte'), registrations_path, class: 'gotoalluserpage' %>
     </div>
-  </div>
 <% end %>

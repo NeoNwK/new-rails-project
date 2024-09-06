@@ -21,7 +21,7 @@
           <td><%= registration.phone %></td>
           <td><%= registration.subject %></td>
           <td>
-             <%= button_to 'ลบ', registration_path(registration), method: :delete %>
+             <%= button_to 'ลบ', registration_path(registration), method: :delete, class: 'delete-button' %>
             </td>
             <td>
               <%= link_to 'แก้ไข', edit_registration_path(registration), class: 'edit-button' %>
