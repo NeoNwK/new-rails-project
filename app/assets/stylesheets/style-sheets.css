@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient( 45deg,#9B4376,#966EC8,#56659A, #DBA5BA);
+    background: linear-gradient( 45deg,#5A639C,#7776B3,#9B86BD, #E2BBE9);
     padding-right: 10rem;
 }
 
@@ -153,7 +153,7 @@ select {
   }
   .button-allList {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-bottom: auto;
   }
 
