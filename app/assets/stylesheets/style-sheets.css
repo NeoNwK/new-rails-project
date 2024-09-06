@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient( 45deg,#5A639C,#7776B3,#9B86BD, #E2BBE9);
+    background: linear-gradient( 45deg,#5A639C,#7776B3,#9B86BD, #E2BBE9, #cc3131);
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
 }
@@ -128,6 +128,7 @@ select {
 }
 
 
+
   
 .form-container {
     background-color: white;
@@ -137,7 +138,6 @@ select {
     margin: 40px auto;
     max-width: 1200px;
   }
-
 
   table {
     width: 100%;
@@ -237,6 +237,10 @@ select {
     justify-content: center;
  }
 
+
+
+
+
  .main {
     display: flex;
     flex-direction: column;
@@ -274,11 +278,11 @@ select {
     }
 
  .button-link {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
    .primary-button {
-    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    background-image: linear-gradient(135deg, #964abc 0%, #7E7EB8 50%, #e634d4 100%);
     color: white;
     display: inline-block;
     width: 100%;
@@ -289,10 +293,11 @@ select {
     border-radius: 5px;
     font-weight: bold;
     border-radius: 30px;
+    font-size: 22px;
   }
 
   .primary-button:hover {
-    background-color: #5a68d5;
+    background: linear-gradient(45deg, #4ECDC4, #FF6B6B);
     color: white;
     transition: all 0.3s ease;
     transform: translateY(-8px);
@@ -322,15 +327,6 @@ select {
 
     
   }
-  
-  /* h1::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: linear-gradient(90deg, #FF6B6B, #4ECDC4);
-    margin: 10px auto 0;
-  } */
   
   .field {
     margin-bottom: 30px;
@@ -384,8 +380,6 @@ select {
     color: #FF6B6B;
     text-decoration: underline;
   }
-  
-
   
   .button-update {
     background-image: linear-gradient(135deg, #5A639C 0%, #7E7EB8 50%, #A18CD1 100%);
