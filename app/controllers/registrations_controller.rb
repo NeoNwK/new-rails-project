@@ -31,7 +31,7 @@ class RegistrationsController < ApplicationController
   def create
     @registration = Registration.new(registration_params)
     if @registration.save
-      redirect_to registrations_new_path, notice: 'ส่งข้อมูลลงทะเบียนเรียบร้อยแล้ว!'
+      redirect_to registrations_path, notice: 'ส่งข้อมูลลงทะเบียนเรียบร้อยแล้ว!'
     else
       render :new
     end

@@ -1,0 +1,11 @@
+services:
+  rails:
+      container_name: web 
+      image: neozazazazazazazazaza/neopass:latest
+      ports:
+        - "80:3000"
+      environment:
+        - RAILS_ENV=production
+        - RAILS_MASTER_KEY=f1e26b280b6a27e0dc7e7935cc0142b1
+        - SECRET_KEY_BASE=$(bundle exec rails secret)
+      command: bash -c ""
