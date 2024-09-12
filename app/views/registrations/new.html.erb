@@ -1,5 +1,5 @@
-<%= form_with(model: @registration, local: true, url: registrations_create_path, class: "main-form") do |form| %>
-  <% if @registration.errors.any? %>
+<%= form_with(model: @registration, local: true, url: registrations_path, class: "main-form") do |form| %>  
+<% if @registration.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@registration.errors.count, "error") %> ทำให้ไม่สามารถบันทึกข้อมูลได้:</h2>
       <ul>

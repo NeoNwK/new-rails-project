@@ -19,6 +19,15 @@ class RegistrationsController < ApplicationController
     redirect_to registrations_path, notice: 'ลบข้อมูลสำเร็จ'
   end
 
+  def confirm_delete
+    @registration = Registration.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.turbo_stream
+    end
+  end
+
+
   def update
     @registration = Registration.find(params[:id])
     if @registration.update(registration_params)

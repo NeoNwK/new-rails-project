@@ -23,7 +23,7 @@
           <td><%= registration.phone %></td>
           <td><%= registration.subject %></td>
           <td>
-             <%= button_to 'ลบ', registration_path(registration), method: :delete, class: 'delete-button' %>
+             <%= button_to 'ลบ', confirm_delete_path(registration), method: :get, data: { turbo_frame: "modal_frame"}, class: 'delete-button' %>
             </td>
             <td>
               <%= link_to 'แก้ไข', edit_registration_path(registration), class: 'edit-button' %>
@@ -37,3 +37,5 @@
      <%= link_to 'กลับหน้าลงทะเบียน', new_registration_path, class: 'new-registration' %>
   </div>
 </div>
+
+<%= turbo_frame_tag "modal_frame"%>
