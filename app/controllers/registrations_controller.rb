@@ -22,10 +22,11 @@ class RegistrationsController < ApplicationController
   def confirm_delete
     @registration = Registration.find(params[:id])
     respond_to do |format|
+      format.turbo_stream { render partial: 'registrations/confirm_delete', locals: { registration: @registration } }
       format.html
-      format.turbo_stream
     end
   end
+
 
 
   def update
